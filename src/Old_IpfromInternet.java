@@ -3,7 +3,7 @@
  */
 import java.net.InetAddress;
 import java.net.SocketException;
-public class IpfromInternet {
+public class Old_IpfromInternet {
 
 	public static void fetchIps(String[] args0) throws SocketException{
 		final byte[] ip;

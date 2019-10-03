@@ -37,7 +37,7 @@ import javax.swing.SwingConstants;
  *
  */
 @SuppressWarnings("serial")
-public class runme extends JFrame {
+public class Old_runme extends JFrame {
 	
 	// All these are global to the class to make it super easy to switch info out as new meters are
 	// Active
@@ -87,7 +87,7 @@ public class runme extends JFrame {
 	String meter[][];
 	JProgressBar activeProgressBar;
 
-	public runme(String[][] meters) {
+	public Old_runme(String[][] meters) {
 		// Name of Program
 		super("EMMS Control Panel V0.0");
 		
@@ -585,7 +585,7 @@ public class runme extends JFrame {
 			String ip = button.getToolTipText();
 			String name = button.getText();
 			if( name.contains("Pulse")) {
-				Client client = new Client();
+				Old_Client client = new Old_Client();
 				// pulses wifi
 				client.Communicate(ip, 80, "!MOD;PULSE*");
 			}
@@ -621,7 +621,7 @@ public class runme extends JFrame {
 		Communication.startUp();
 		String[][] meterData = Communication.ReturnFileValues();
 		// MESSIAH ACKNOLWEDGE         DATE         VERSION         IPV4          NAME       #     Location   			 	Remaining %    Curr Load     Time Left      Load Left       MAC Addr   Online(?)
-		new runme(meterData);
+		new Old_runme(meterData);
 		
 	}
 

@@ -31,7 +31,7 @@ public class Communication {
 	}
 
 	public static void startUp() {
-		Object[] metersobj = meterScan.getMeters();
+		Object[] metersobj = Old_meterScan.getMeters();
 		String[] meters;
 		meters = new String[metersobj.length];
 		for (int i = 0; i < meters.length; i++) {
@@ -123,7 +123,7 @@ public class Communication {
 
 	private static String[] fetchNewNetworkInfo(String ip) {
 		String[] meterInfo = new String[2];
-		Client client = new Client();
+		Old_Client client = new Old_Client();
 		String response = client.Communicate(ip, 80, "!MOD;NETWORK*");
 		String[] blocks = response.split(",");
 		blocks[1] = blocks[1].replaceAll("[^\\d.]", "");
@@ -137,7 +137,7 @@ public class Communication {
 
 	private static String[] fetchNewMeterConfig(String ip) {
 		String[] meterInfo = new String[5];
-		Client client = new Client();
+		Old_Client client = new Old_Client();
 		String response = client.Communicate(ip, 80, "!MOD;CONFIG*");
 		String[] blocks = response.split(";");
 		//		System.out.println(Arrays.toString(blocks));
@@ -276,7 +276,7 @@ public class Communication {
 	}
 
 	public static void showOff(String[][] ips, int trials) {
-		Client client = new Client();
+		Old_Client client = new Old_Client();
 		for( int r = 0; r < trials * 2; r ++) {
 			for(int i = 0; i < ips.length; i++ ) {
 				String active = ips[i][12];

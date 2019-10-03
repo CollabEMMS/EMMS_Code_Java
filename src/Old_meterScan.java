@@ -15,7 +15,7 @@ import java.util.Arrays;
  * @author Zachery Holsinger
  *
  */
-public class meterScan {
+public class Old_meterScan {
 
 	private Socket clientSocket;
 	private static Object[] meterArrayNew;
@@ -39,7 +39,7 @@ public class meterScan {
 		String[] ips = ip.split("%");
 		System.out.println("My Current IP is: " + ips[0] + "." + ips[1] + "." + ips[2] + "." + ips[3]);
 		String ipSubnet = ips[0] + "." + ips[1] + "." + ips[2] + ".";
-		meterScan getIps = new meterScan(ipSubnet);
+		Old_meterScan getIps = new Old_meterScan(ipSubnet);
 		
 			return meterArrayNew;
 		} catch (UnknownHostException e) {
@@ -49,7 +49,7 @@ public class meterScan {
 		return null;
 	}
 	
-	public meterScan(String inputSubNet) {
+	public Old_meterScan(String inputSubNet) {
 		for(int i = 0; i <= 60; i++) { //ADJUST THIS ZACH TO 255
 			boolean isMeter = isIp(inputSubNet + i);
 		}

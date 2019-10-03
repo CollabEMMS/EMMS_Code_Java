@@ -5,7 +5,7 @@
 import java.net.*;
 import java.io.*; 
 
-public class Client
+public class Old_Client
 { 
 	private Socket clientSocket;
 	private PrintWriter out;
