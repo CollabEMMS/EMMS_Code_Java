@@ -9,22 +9,10 @@
 /21.png
 /26.png
 /5.png
-/Client.class
 /Communication.class
-/IpfromInternet$1.class
-/IpfromInternet.class
-/meterData.csv
-/meterDataBackup.csv
-/meterScan.class
-/none.png
-/runme$1.class
-/runme$KeyListen.class
-/runme$Listener.class
-/runme$PulseListen.class
-/runme$WindowStateListener.class
-/runme$windowResize.class
-/runme.class
 /Old_Client.class
+/Old_IpfromInternet$1.class
+/Old_IpfromInternet.class
 /Old_meterScan.class
 /Old_runme$1.class
 /Old_runme$KeyListen.class
@@ -33,5 +21,10 @@
 /Old_runme$WindowStateListener.class
 /Old_runme$windowResize.class
 /Old_runme.class
-/Old_IpfromInternet$1.class
-/Old_IpfromInternet.class
+/meterData.csv
+/meterDataBackup.csv
+/none.png
+/MeterADT.class
+/Meter.class
+/Untitled 1
+/README
